@@ -57,6 +57,7 @@ btn.addEventListener(`click`, () => {
             min = tahmin;
             scale.innerHTML = `go up ⬆  Correct answer is between ${tahmin} and ${max}`;
         }
+        if (Number(attempt.innerHTML) > 5){    attempt.style.display = `none`;}
     }
 
 
