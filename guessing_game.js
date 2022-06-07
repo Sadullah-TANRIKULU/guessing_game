@@ -29,7 +29,6 @@ console.log(scale);
 
 btn.addEventListener(`click`, () => {
     tahmin = guessNumber.value;
-    console.log(tahmin);
     live --;
 
     if (tahmin == randomNumber) {
@@ -44,8 +43,6 @@ btn.addEventListener(`click`, () => {
 
         
         attempt.innerHTML = Number(attempt.innerHTML)+1;
-
-        console.log(guessNumber.value);
 
         if (tahmin > randomNumber) {
             
@@ -62,13 +59,9 @@ btn.addEventListener(`click`, () => {
 
 
 if (live === 0 && tahmin != randomNumber) {
-    console.log("Sorry, game over! :pensive:");
-    result.innerText = `"Sorry, game over! :pensive:"`;
+    result.innerText = `"Sorry, game over! 🙄"`;
     btn.style.display = `none`;
 }
-
-
-
 guessNumber.value = ``;
 
 });
